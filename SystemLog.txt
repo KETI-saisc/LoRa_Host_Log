@@ -1,10 +1,15 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [05/02 14:06:46]  - Start Aplication.
 [05/02 14:07:06]  - Initialize OK.
 [05/03 07:09:42]  - Start Aplication.
 [05/03 07:10:02]  - Initialize OK.
 [05/06 03:31:56]  - Start Aplication.
 [05/06 03:32:16]  - Initialize OK.
+=======
+[05/02 12:30:36]  - Start Aplication.
+[05/02 12:30:52]  - Initialize OK.
+>>>>>>> 9dfc380a5c5a01aeababb0c8eed05e6fd7386e18
 =======
 [05/02 12:30:36]  - Start Aplication.
 [05/02 12:30:52]  - Initialize OK.
