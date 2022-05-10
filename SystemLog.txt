@@ -1,0 +1,2 @@
+[05/02 12:30:36]  - Start Aplication.
+[05/02 12:30:52]  - Initialize OK.

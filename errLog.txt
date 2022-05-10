@@ -1,0 +1,19 @@
+[05/02 12:30:40]  - [OpenMonitoring] - GPIO Error
+System.UnauthorizedAccessException: Opening pins requires root permissions.
+ ---> System.UnauthorizedAccessException: Access to the path '/sys/class/gpio/export' is denied.
+ ---> System.IO.IOException: Permission denied
+   --- End of inner exception stack trace ---
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at System.IO.FileStream.OpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter.ValidateArgsAndOpenPath(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path)
+   at System.IO.File.WriteAllText(String path, String contents)
+   at System.Device.Gpio.Drivers.SysFsDriver.OpenPin(Int32 pinNumber)
+   --- End of inner exception stack trace ---
+   at System.Device.Gpio.Drivers.SysFsDriver.OpenPin(Int32 pinNumber)
+   at System.Device.Gpio.GpioController.OpenPinCore(Int32 pinNumber)
+   at System.Device.Gpio.GpioController.OpenPin(Int32 pinNumber)
+   at System.Device.Gpio.GpioController.OpenPin(Int32 pinNumber, PinMode mode)
+   at LoRa_Host.OpenMonitoring.MonitorProc() in D:\Source\Lora\행정복지센터(Host)\20220412 -LoRa_Host(TLS)\LoRa_Host\OpenMonitoring.cs:line 33
